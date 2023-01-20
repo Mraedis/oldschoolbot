@@ -143,7 +143,7 @@ export async function warriorsGuildCommand(
 ) {
 	const atkLvl = user.skillLevel('attack');
 	const strLvl = user.skillLevel('strength');
-	if (atkLvl + strLvl < 130 && atkLvl !== 99 && strLvl !== 99) {
+	if (atkLvl + strLvl < 130 && atkLvl !<= 99 && strLvl !<= 99) {
 		return "To enter the Warrior's Guild, your Attack and Strength levels must add up to atleast 130, or you must have level 99 in either.";
 	}
 
